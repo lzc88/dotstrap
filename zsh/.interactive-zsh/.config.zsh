@@ -28,4 +28,7 @@ POWERLEVEL9K_CONFIG_FILE="$HOME/.interactive-zsh/.p10k.zsh"
 [[ -f "$HOME/.interactive-zsh/.aliases.zsh" ]] \
 && source "$HOME/.interactive-zsh/.aliases.zsh"
 
+[[ -f "$HOME/.interactive-zsh/.functions.zsh" ]] \
+&& source "$HOME/.interactive-zsh/.functions.zsh"
+
 (( ${+commands[direnv]} )) && emulate zsh -c "$(direnv hook zsh)"
