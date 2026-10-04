@@ -2,6 +2,25 @@ function zsh-show(){
   cat "$HOME/.interactive-zsh/.aliases.zsh"
 }
 
+function brews()
+{
+  emulate -L zsh
+  local repo="$HOME/.setup"
+
+  "$repo/.setup.zsh" brew || return 1
+
+  print -- "\n--- Removing old versions and cached downloads ---"
+  brew cleanup
+
+  print -- "\n--- Installed but not in Brewfile ---"
+  if brew bundle cleanup --file="$repo/Brewfile"; then
+    print "(none, everything matches the Brewfile)"
+  else
+    print "Add them to the Brewfile, or uninstall them with: brew bundle cleanup --force --file=$repo/Brewfile"
+    return 1
+  fi
+}
+
 function daily-summary()
 {
   emulate -L zsh
