@@ -1,6 +1,9 @@
-eval "$(/opt/homebrew/bin/brew shellenv zsh)"
+for brew_bin in /opt/homebrew/bin/brew /usr/local/bin/brew; do
+  [[ -x $brew_bin ]] && eval "$("$brew_bin" shellenv zsh)" && break
+done
+unset brew_bin
 
-export JAVA_HOME="/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home"
+export JAVA_HOME="$HOMEBREW_PREFIX/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home"
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'

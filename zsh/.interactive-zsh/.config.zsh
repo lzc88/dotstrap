@@ -18,8 +18,8 @@ COMPLETION_WAITING_DOTS="true"
 [[ -f "$ZSH/oh-my-zsh.sh" ]] \
 && source "$ZSH/oh-my-zsh.sh"
 
-[[ -f "/opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme" ]] \
-&& source "/opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme"
+[[ -f "$HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme" ]] \
+&& source "$HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme"
 
 POWERLEVEL9K_CONFIG_FILE="$HOME/.interactive-zsh/.p10k.zsh"
 [[ -f "$POWERLEVEL9K_CONFIG_FILE" ]] \
