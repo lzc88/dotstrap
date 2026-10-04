@@ -1,1 +1,19 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+Icon?
+
+# Editors
+*.swp
+*.swo
+*~
+.idea/
+
+# direnv cache
+.direnv/
+
+# Claude Code
+CLAUDE.local.md
 **/.claude/settings.local.json
