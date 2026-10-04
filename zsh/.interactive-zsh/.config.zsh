@@ -1,4 +1,4 @@
-export ZSH="$HOME/.zsh-tooling/.oh-my-zsh"
+export ZSH="$HOME/.interactive-zsh/.oh-my-zsh"
 
 zstyle ':omz:update' mode reminder
 
@@ -10,7 +10,7 @@ plugins=(
 mkdir -p "$HOME/.cache/zsh"
 ZSH_COMPDUMP="$HOME/.cache/zsh/zcompdump-$ZSH_VERSION"
 
-HISTFILE="$HOME/.zsh-tooling/.zsh_history"
+HISTFILE="$HOME/.interactive-zsh/.zsh_history"
 
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
