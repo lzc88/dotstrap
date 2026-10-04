@@ -13,6 +13,7 @@ cask "spotify"
 cask "telegram"
 cask "whatsapp"
 cask "discord"
+cask "steam"
 
 # ------------------------------
 # Productivity
@@ -22,6 +23,8 @@ cask "google-chrome"
 cask "notion"
 cask "microsoft-outlook"
 cask "skim"
+cask "zoom"
+cask "microsoft-teams"
 
 # ------------------------------
 # Utilities
@@ -68,8 +71,10 @@ brew "mongosh"
 brew "mongodb/brew/mongodb-community@7.0"
 brew "mongodb/brew/mongodb-database-tools"
 brew "awscli"
-cask "docker-desktop"
 brew "hashicorp/tap/terraform"
+cask "docker-desktop"
+cask "dbeaver-community"
+cask "mongodb-compass"
 
 # ------------------------------
 # CLI Tools
@@ -92,3 +97,12 @@ brew "jq"
 brew "yq"
 brew "poppler"
 brew "ffmpeg"
+brew "mas"
+
+# ------------------------------
+# App Store
+# ------------------------------
+
+# 462058435   Microsoft Excel
+# 1274495053  Microsoft To Do
+# 836500024   WeChat
