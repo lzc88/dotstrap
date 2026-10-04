@@ -2,11 +2,6 @@ export ZSH="$HOME/.interactive-zsh/.oh-my-zsh"
 
 zstyle ':omz:update' mode reminder
 
-plugins=(
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
-
 mkdir -p "$HOME/.cache/zsh"
 ZSH_COMPDUMP="$HOME/.cache/zsh/zcompdump-$ZSH_VERSION"
 
@@ -30,5 +25,11 @@ POWERLEVEL9K_CONFIG_FILE="$HOME/.interactive-zsh/.p10k.zsh"
 
 [[ -f "$HOME/.interactive-zsh/.functions.zsh" ]] \
 && source "$HOME/.interactive-zsh/.functions.zsh"
+
+[[ -f "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] \
+&& source "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+[[ -f "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] \
+&& source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 (( ${+commands[direnv]} )) && emulate zsh -c "$(direnv hook zsh)"
