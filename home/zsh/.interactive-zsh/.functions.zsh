@@ -5,7 +5,7 @@ function zsh-show(){
 function brews()
 {
   emulate -L zsh
-  local repo="$HOME/.dotfiles"
+  local repo="${DOTFILES:?not set, start a new login shell}"
 
   "$repo/bootstrap.zsh" brew || return 1
 

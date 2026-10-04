@@ -3,6 +3,8 @@ for brew_bin in /opt/homebrew/bin/brew /usr/local/bin/brew; do
 done
 unset brew_bin
 
+export DOTFILES="${${:-$HOME/.zprofile}:A:h:h:h}"
+
 export JAVA_HOME="$HOMEBREW_PREFIX/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home"
 
 if [[ -n $SSH_CONNECTION ]]; then
