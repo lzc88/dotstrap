@@ -5,9 +5,9 @@ function zsh-show(){
 function brews()
 {
   emulate -L zsh
-  local repo="$HOME/.setup"
+  local repo="$HOME/.dotfiles"
 
-  "$repo/.setup.zsh" brew || return 1
+  "$repo/bootstrap.zsh" brew || return 1
 
   print -- "\n--- Removing old versions and cached downloads ---"
   brew cleanup
