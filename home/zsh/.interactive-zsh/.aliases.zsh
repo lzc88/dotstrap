@@ -35,6 +35,7 @@ alias grmurl='git remote set-url'
 
 alias gbr='git branch'
 alias gbra='git branch --all'
+alias gbrv='git branch --verbose'
 alias gbrd='git branch --delete'
 alias gbrD='git branch --delete --force'
 
@@ -73,6 +74,7 @@ alias gplrav='git pull --rebase --autostash -v'
 
 alias gf='git fetch'
 alias gfo='git fetch origin'
+alias gfpo='git fetch --prune origin'
 
 alias gm='git merge'
 alias gmff="git merge --ff-only"
@@ -90,11 +92,12 @@ alias grss='git reset --soft'
 alias grst='git reset --'
 
 alias gstall='git stash --all'
-alias gstaa='git stash apply'
+alias gstpsh='git stash push'
+alias gstp='git stash pop'
+alias gsta='git stash apply'
 alias gstc='git stash clear'
 alias gstd='git stash drop'
 alias gstl='git stash list'
-alias gstp='git stash pop'
 
 alias gwt='git worktree'
 alias gwta='git worktree add'
