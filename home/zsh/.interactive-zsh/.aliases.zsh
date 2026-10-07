@@ -5,6 +5,7 @@
 alias rm='safe-rm'
 alias ll='ls -lah'
 alias reload='exec zsh'
+alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
 
 # ------------------------------
 # uv
